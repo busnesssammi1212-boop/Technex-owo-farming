@@ -1,121 +1,59 @@
-<div align="center">
-  <img src="./dashboard/static/assets/technexbanner.png" alt="Technex Banner">
-  
-  <br/>
-  <br/>
+<p align="center">
+  <img src="technex-banner.png" alt="Technex" width="700">
+</p>
 
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Pacifico&size=40&pause=1000&color=FF0000&center=true&vCenter=true&random=false&width=600&lines=Advanced+OwO+Automation;Built+by+ROUTO;Star+the+repo" alt="Technex">
-  
-  <br/>
-  <br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/license-GPL--3.0-green" alt="GPL-3.0">
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey" alt="Platform">
+</p>
 
-  <a href="https://discord.gg/XQS473Scfe">
-    <img src="https://invidget.switchblade.xyz/XQS473Scfe" alt="Discord Community"/>
-  </a>
-  
-  <br/>
-  <br/>
+# Technex
 
-  <img src="https://img.shields.io/badge/Technex-Advanced_Automation-red?style=for-the-badge&logo=discord&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-Private-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
-  
-  <br/>
-  <br/>
-
-</div>
-
----
-
-> [!IMPORTANT]
-> WE ARE NOT responsible if you get banned using our selfbots. Selfbots are against Discord ToS and break OwO bot rules. Use only in private servers and do not openly share that you are using automation.
-
-## What is Technex?
-
-**Technex** is a powerful, fully-featured OWO-BOT automation tool offering a premium web dashboard. It allows you to monitor all your data in real-time through an easy-to-manage, beautifully designed interface.
-
----
+Technex is a Python-based automation tool for OwO farming on Discord, with a clean web dashboard that runs locally on your own PC. It handles the repetitive parts of the grind so you can check progress instead of typing commands all day.
 
 ## Features
 
-- **Full Web Dashboard**:
- Real-time stats, charts, and a live configuration editor via an elegant interface.Easy to manage
+- Auto hunt and battle with human-like timing
+- Quest, HuntBot and channel-switch scheduling
+- Multi-account support with per-account configuration
+- Proxy support for each account
+- Live dashboard: balance, uptime, hunts, battles, CPM and an activity chart
+- Scheduled Actions panel showing what runs next
+- Built-in terminal and history log
+- Start, stop and cash controls, responsive on desktop and mobile
+- Searchable configuration page with "Save to all accounts"
 
-- **Mobile Support (Termux)**: Fully functional on Android devices with toast notifications and vibrations.
+## Quick start (Windows)
 
-- **Smart Captcha Solvers**:
- 4captcha services to solve hcaptcha , onnx model to solve letterword captcha and fallback to manual solve
+1. Install [Python 3.10+](https://www.python.org/downloads/) (tick **Add Python to PATH**).
+2. Download or clone this repository.
+3. Double-click **`start_technex.bat`**.
+   - First run installs the requirements and creates your dashboard login.
+4. Open the local dashboard link shown in the window, sign in, and adjust your settings in the **Configuration** tab.
 
-- **Multi-Account Manager**:
- Safely run unlimited accounts simultaneously with independent settings.
+The default dashboard login is created on first run and stored in `config/auth.json`. **Change the default password**, and never share this file.
 
-- **Advanced Stealth & Security**: Realistic typing simulation, auto-pause on detection, and multi-layer security to keep you safe.
-
-- **Advanced Gambling**:
-Instead of sending just gambling commands, it has strategies (martingale ,flat) also has stoploss and take profit!!
-
-- **Dynamic Quest Intelligence**: Automatically completes checklists and tracks progression.
-
-- **Advanced AutoGems**: Automatically equip gems.
-
-- **Easy to setup** : Setup files make it very easy to download and configure.
-
-- **Many more features........................**
-
-
-
----
-
-## Installation
-
-### Windows
+## Linux / macOS
 
 ```bash
-curl -o "%TEMP%\install_technex.bat" https://raw.githubusercontent.com/routo-loop/neura-self/main/install_technex.bat && "%TEMP%\install_technex.bat"
+pip install -r requirements.txt
+python technex_setup.py --quick
+python technex.py
 ```
 
-### Termux / Linux / MacOS
+## Privacy and safety
 
-```bash
-bash <(curl -s https://raw.githubusercontent.com/routo-loop/neura-self/main/install_technex.sh)
-```
-
-#### For Termux
-
-Make sure to install the **Termux** and **Termux:API** apps from F-Droid or GitHub (grant the API app notifications permission). After the installation script finishes, follow the setup steps prompted by `technex_setup.py`. If you face issues with the basic installation, try the manual installation method.
-
----
-
-## Dashboard
-
-Once the bot is running, you can access the beautiful dashboard at:
-
-**<http://localhost:8000>**
-
----
+- Everything runs on your own machine.
+- Your account tokens and dashboard login stay in local files (`config/accounts.json`, `config/auth.json`). They are ignored by Git, so do not upload them anywhere.
+- Keep the dashboard on your own PC (`127.0.0.1`) so nobody else on your network can reach it.
 
 ## Disclaimer
 
-This tool is for **educational purposes only**. Using self-bots violates Discord's Terms of Service.
+Automating a Discord user account (a self-bot) is against Discord's Terms of Service, and macros are not allowed under OwO's rules. Accounts can be flagged or banned. Use at your own risk, preferably on an alt account. This project is provided as is, without warranty.
 
-<div align="center">
+## License
 
-### Technex
+Released under the **GNU General Public License v3.0**. See [`LICENSE`](LICENSE).
 
-**Advanced OwO Bot Grinder** • Built by **ROUTO** • Made with ❤️
-
-**Star this project if you find it useful!**
-
-</div>
-
-## Screenshots
-
-### Login Page Screenshot
-![Login](dashboard/static/assets/technex-auth.jpg)
-
-### Dashboard
-![Dashboard](dashboard/static/assets/technex-desktop-dash.jpg)
-
-### Dashboard Mobile
-![Dashboard](dashboard/static/assets/technex-mob.jpg)
+Based on NeuraSelf by Routo.
