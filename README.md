@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="technex-banner.png" alt="Technex" width="700">
+ <img src="technex-banner%20(1).png" alt="Technex" width="700">
 </p>
 
 <p align="center">
